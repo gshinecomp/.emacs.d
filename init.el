@@ -17,6 +17,16 @@
 ;(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 ;(add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 
+;; I keep all my emacs-related stuff under ~/emacs
+;(defvar emacs-root (if (or (eq system-type 'cygwin)
+;			 (eq system-type 'gnu/linux)
+;			 (eq system-type 'linux))
+;		 "/home/stevey/" 		 "c:/home/stevey/")
+; "My home directory — the root of my personal emacs load-path.")
+
+(setq default-directory "~/doc")
+(load-file "~/.emacs.d/org-mode-settings.el")
+
 ;; Increase gc-cons-threshold, depending on your system you may set it back to a
 ;; lower value in your dotfile (function `dotspacemacs/user-config')
 (setq gc-cons-threshold 100000000)
