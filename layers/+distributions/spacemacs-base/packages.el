@@ -361,7 +361,7 @@
         "pT" 'projectile-test-project))
     :config
     (progn
-      (projectile-global-mode)
+      ;(projectile-global-mode)
       (spacemacs|hide-lighter projectile-mode))))
 
 (defun spacemacs-base/init-recentf ()
