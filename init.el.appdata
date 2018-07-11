@@ -1,0 +1,7 @@
+;; Without this comment emacs25 adds (package-initialize) here
+;; (package-initialize)
+
+(setenv "HOME" "D:/PortableApps/emacs-25.3")
+(setenv "PATH" "D:/PortableApps/emacs-25.3")
+(setq default-directory "~/")
+(load-file "D:/PortableApps/emacs-25.3/.emacs.d/init.el")
