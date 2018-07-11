@@ -1,7 +1,5 @@
 ;; 参考
 ;; https://github.com/snufkon/emacs_settings/blob/master/dot_emacs/mode/org-mode-settings.el
-(require 'org-install)
-(require 'org)
 
 ;; 参考
 ;; http://d.hatena.ne.jp/rubikitch/20100819/org
@@ -9,7 +7,7 @@
 (setq org-return-follows-link t)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 (setq org-directory (expand-file-name "~/org-file/")
-    org-agenda-files (expand-file-name "Agenda.org" org-directory)
+;    org-agenda-files (expand-file-name "Agenda.org" org-directory)
     org-default-journal-file (expand-file-name "Journal.org" org-directory)
     org-default-archive-file (expand-file-name "Archive.org" org-directory)
     org-archive-location (concat org-default-archive-file "::datetree/")
@@ -53,4 +51,3 @@
 ;; DONEの時刻を記録
 (setq org-log-done 'time)
 
-(require 'org-habit)
