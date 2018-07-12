@@ -154,7 +154,8 @@ boundaries."
 				      (org-element-property
 				       :post-affiliated paragraph)
 				      t)
-				   (string-to-number (match-string 1))))))
+				   (match-string 1)))))
+				   ;(string-to-number (match-string 1))))))
 			   ;; Otherwise, fall-back to provided number.
 			   (car org-image-actual-width)))
 			 ((numberp org-image-actual-width)
