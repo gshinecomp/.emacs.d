@@ -1,3 +1,9 @@
+
+(setq org-image-actual-width nil) ; use ATTR define
+;(setq org-image-actual-width 100)
+;(setq org-image-actual-width (/ (display-pixel-width) 3))
+
+;;;; ---------------------------------------------------------------------------
 ;; 参考
 ;; https://github.com/snufkon/emacs_settings/blob/master/dot_emacs/mode/org-mode-settings.el
 
